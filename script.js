@@ -24,7 +24,7 @@ links.querySelectorAll('a').forEach((a) =>
 );
 
 // Scroll-reveal
-const reveal = document.querySelectorAll('.section, .hero__text, .hero__portrait');
+const reveal = document.querySelectorAll('.section, .hero');
 const io = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {

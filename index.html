@@ -7,16 +7,16 @@
   <meta name="description" content="Portfolio of Madeline Fisher — designer and visual artist studying Design at Tulane University. Interior design, textiles, painting, and graphic design." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=4" />
 </head>
 <body>
   <!-- Navigation -->
   <header class="nav" id="nav">
-    <a href="#top" class="nav__brand">Madeline&nbsp;Fisher</a>
+    <a href="#top" class="nav__brand">Madeline Fisher</a>
     <nav class="nav__links" aria-label="Primary">
-      <a href="#about">About</a>
       <a href="#work">Work</a>
+      <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#awards">Awards</a>
       <a href="#contact">Contact</a>
@@ -28,34 +28,98 @@
 
   <!-- Hero -->
   <section class="hero" id="top">
-    <div class="hero__inner">
+    <p class="hero__eyebrow kicker">Designer &amp; Visual Artist — Dallas / New Orleans</p>
+    <h1 class="hero__display">Madeline<br /><em>Fisher</em></h1>
+    <div class="hero__lower">
       <div class="hero__text">
-        <p class="hero__eyebrow">Designer &amp; Visual Artist</p>
-        <h1 class="hero__title">Madeline<br /><span>Fisher</span></h1>
         <p class="hero__lead">
-          Design student at Tulane University working across interior design,
-          textiles, painting, and graphic design — shaping spaces and objects
-          that are thoughtful, sustainable, and made by hand.
+          A designer working across interior design, textiles, painting, and
+          graphic design — shaping spaces and objects that are thoughtful,
+          sustainable, and made by hand.
         </p>
         <div class="hero__actions">
           <a href="#work" class="btn btn--solid">View Work</a>
-          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+          <a href="#contact" class="btn">Get in Touch</a>
         </div>
       </div>
-      <div class="hero__portrait">
+      <figure class="hero__portrait">
         <div class="hero__portrait-frame">
           <img src="assets/madeline.jpg" alt="Portrait of Madeline Fisher"
                onerror="this.closest('.hero__portrait-frame').classList.add('is-empty')" />
           <div class="hero__portrait-fallback" aria-hidden="true">MF</div>
         </div>
-      </div>
+      </figure>
     </div>
+  </section>
+
+  <!-- Work / Gallery -->
+  <section class="section work" id="work">
+    <div class="section__head">
+      <span class="section__num">01</span>
+      <h2 class="section__title">Selected Work</h2>
+    </div>
+
+    <div class="work__grid">
+      <article class="tile">
+        <div class="tile__img">
+          <img src="assets/kips-bay.png" alt="Kips Bay Showhouse" onerror="this.style.display='none'" />
+          <span>Kips Bay</span>
+        </div>
+        <div class="tile__cap">
+          <span>Kips Bay<br />Showhouse</span>
+          <span>Interior<br />Design</span>
+        </div>
+      </article>
+
+      <article class="tile">
+        <div class="tile__img">
+          <img src="assets/community-relief-center.png" alt="Community Relief Center" onerror="this.style.display='none'" />
+          <span>Relief Center</span>
+        </div>
+        <div class="tile__cap">
+          <span>Community<br />Relief Center</span>
+          <span>Interior<br />Design</span>
+        </div>
+      </article>
+
+      <article class="tile">
+        <div class="tile__img">
+          <img src="assets/book-lounger.jpg" alt="Book Lounger" onerror="this.style.display='none'" />
+          <span>Book Lounger</span>
+        </div>
+        <div class="tile__cap">
+          <span>Book<br />Lounger</span>
+          <span>Furniture<br />Design</span>
+        </div>
+      </article>
+
+      <article class="tile">
+        <div class="tile__img">
+          <img src="assets/audubon-pavilion.jpeg" alt="Audubon Pavilion" onerror="this.style.display='none'" />
+          <span>Audubon Pavilion</span>
+        </div>
+        <div class="tile__cap">
+          <span>Audubon<br />Pavilion</span>
+          <span>Spatial<br />Design</span>
+        </div>
+      </article>
+    </div>
+
+    <div class="work__cta">
+      <a href="https://instagram.com/maddiefisherart" target="_blank" rel="noopener" class="btn">Explore on Instagram</a>
+    </div>
+
+    <p class="work__caption">
+      From sourcing fabrics for the Dallas Kips Bay Show House to sustainable
+      textiles auctioned for ricRACK and commissioned portraits for the Young
+      Presidents' Organization — a practice rooted in craft, color, and reuse.
+    </p>
   </section>
 
   <!-- About -->
   <section class="section about" id="about">
     <div class="section__head">
-      <span class="section__num">01</span>
+      <span class="section__num">02</span>
       <h2 class="section__title">About</h2>
     </div>
     <div class="about__grid">
@@ -67,10 +131,10 @@
           and graphic design.
         </p>
         <p>
-          From sourcing furnishings and building mood boards at a Dallas interior
-          design studio to creating sustainable textile projects and commissioned
-          portraits, I love bringing ideas to life — whether through Rhino3D
-          renderings, hand drawing, or the canvas.
+          From building mood boards at a Dallas interior design studio to creating
+          sustainable textile projects and commissioned portraits, I love bringing
+          ideas to life — whether through Rhino3D renderings, hand drawing, or the
+          canvas.
         </p>
       </div>
       <aside class="about__facts">
@@ -102,60 +166,6 @@
         <li>Mood Boarding</li>
       </ul>
     </div>
-  </section>
-
-  <!-- Work / Portfolio -->
-  <section class="section work" id="work">
-    <div class="section__head">
-      <span class="section__num">02</span>
-      <h2 class="section__title">Selected Work</h2>
-    </div>
-    <div class="work__grid">
-      <article class="card">
-        <div class="card__media" data-label="Interior Design"></div>
-        <div class="card__body">
-          <h3>Dallas Kips Bay Show House</h3>
-          <p>Contributed to the design and execution of two spaces — selecting
-             fabrics, sourcing furniture, and producing renderings in Adobe Suite
-             and Rhino3D.</p>
-          <span class="card__tag">Interior Design</span>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card__media" data-label="Textiles"></div>
-        <div class="card__body">
-          <h3>De/Re Constructed Tote Bag</h3>
-          <p>A sustainable textile piece selected as a Runway Nominee for the
-             Tulane Design Showcase — built around reuse and reconstruction.</p>
-          <span class="card__tag">Sustainable Textiles</span>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card__media" data-label="Painting"></div>
-        <div class="card__body">
-          <h3>Commissioned Portraits &amp; Panels</h3>
-          <p>15 custom portraits for the Young Presidents' Organization and 24
-             large panels for the Fannie C. Harris Youth Shelter.</p>
-          <span class="card__tag">Fine Art</span>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card__media" data-label="Graphic Design"></div>
-        <div class="card__body">
-          <h3>ricRACK Event &amp; Brand Design</h3>
-          <p>Graphic design, digital textile patterns, and social content created
-             for ricRACK NOLA's sustainability events and website.</p>
-          <span class="card__tag">Graphic Design</span>
-        </div>
-      </article>
-    </div>
-    <p class="work__note">
-      Sketches, paintings, and commissioned pieces are shared on
-      <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>.
-    </p>
   </section>
 
   <!-- Experience -->
@@ -222,7 +232,7 @@
   <section class="section awards" id="awards">
     <div class="section__head">
       <span class="section__num">04</span>
-      <h2 class="section__title">Awards &amp; Recognition</h2>
+      <h2 class="section__title">Awards</h2>
     </div>
     <ul class="awards__list">
       <li>
@@ -247,31 +257,33 @@
   <section class="section contact" id="contact">
     <div class="section__head">
       <span class="section__num">05</span>
-      <h2 class="section__title">Get in Touch</h2>
+      <h2 class="section__title">Contact</h2>
     </div>
-    <div class="contact__inner">
-      <p class="contact__lead">Open to design opportunities, commissions, and collaborations.</p>
-      <div class="contact__links">
-        <a href="mailto:maddiefisher02@icloud.com" class="contact__link">
-          <span class="contact__label">Email</span>
-          maddiefisher02@icloud.com
-        </a>
-        <a href="tel:+12149099379" class="contact__link">
-          <span class="contact__label">Phone</span>
-          214-909-9379
-        </a>
-        <span class="contact__link">
-          <span class="contact__label">Location</span>
-          Dallas, TX
-        </span>
-      </div>
+    <p class="contact__lead">Open to design opportunities, commissions, and collaborations.</p>
+    <div class="contact__links">
+      <a href="mailto:maddiefisher02@icloud.com" class="contact__link">
+        <span class="contact__label">Email</span>
+        maddiefisher02@icloud.com
+      </a>
+      <a href="tel:+12149099379" class="contact__link">
+        <span class="contact__label">Phone</span>
+        214-909-9379
+      </a>
+      <a href="https://instagram.com/maddiefisherart" target="_blank" rel="noopener" class="contact__link">
+        <span class="contact__label">Instagram</span>
+        @maddiefisherart
+      </a>
+      <span class="contact__link">
+        <span class="contact__label">Location</span>
+        Dallas, TX
+      </span>
     </div>
   </section>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Madeline Fisher. Designed &amp; made by hand.</p>
+    <p>© <span id="year"></span> Madeline Fisher — Designed &amp; made by hand</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2"></script>
 </body>
 </html>
