@@ -202,12 +202,12 @@ a { color: inherit; }
 /* ---------- Work gallery (editorial row) ---------- */
 .work__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: clamp(.9rem, 1.6vw, 1.4rem);
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(1.2rem, 2.2vw, 2rem);
 }
 .tile { display: block; }
 .tile__img {
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 4 / 3;
   position: relative;
   display: flex;
   align-items: center;
@@ -327,8 +327,8 @@ a.contact__link:hover { color: var(--terracotta); }
 }
 
 /* ---------- Responsive ---------- */
-@media (max-width: 960px) {
-  .work__grid { grid-template-columns: repeat(2, 1fr); gap: 1.2rem 1rem; }
+@media (max-width: 600px) {
+  .work__grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 720px) {
   .nav__links {
