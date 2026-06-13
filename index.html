@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Madeline Fisher — Designer &amp; Visual Artist</title>
+  <meta name="description" content="Portfolio of Madeline Fisher — designer and visual artist studying Design at Tulane University. Interior design, textiles, painting, and graphic design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand">Madeline&nbsp;Fisher</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#awards">Awards</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero__inner">
+      <div class="hero__text">
+        <p class="hero__eyebrow">Designer &amp; Visual Artist</p>
+        <h1 class="hero__title">Madeline<br /><span>Fisher</span></h1>
+        <p class="hero__lead">
+          Design student at Tulane University working across interior design,
+          textiles, painting, and graphic design — shaping spaces and objects
+          that are thoughtful, sustainable, and made by hand.
+        </p>
+        <div class="hero__actions">
+          <a href="#work" class="btn btn--solid">View Work</a>
+          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero__portrait">
+        <div class="hero__portrait-frame">
+          <img src="assets/madeline.jpg" alt="Portrait of Madeline Fisher"
+               onerror="this.closest('.hero__portrait-frame').classList.add('is-empty')" />
+          <div class="hero__portrait-fallback" aria-hidden="true">MF</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="section__head">
+      <span class="section__num">01</span>
+      <h2 class="section__title">About</h2>
+    </div>
+    <div class="about__grid">
+      <div class="about__bio">
+        <p>
+          I'm a designer and visual artist pursuing a Bachelor of Arts in Design
+          at Tulane University, where I'm an Honors Scholar on the Dean's List.
+          My work spans interior design, sustainable textiles, fine art painting,
+          and graphic design.
+        </p>
+        <p>
+          From sourcing furnishings and building mood boards at a Dallas interior
+          design studio to creating sustainable textile projects and commissioned
+          portraits, I love bringing ideas to life — whether through Rhino3D
+          renderings, hand drawing, or the canvas.
+        </p>
+      </div>
+      <aside class="about__facts">
+        <div class="fact">
+          <span class="fact__label">Education</span>
+          <span class="fact__value">Tulane University<br /><em>B.A. in Design · GPA 3.9</em></span>
+        </div>
+        <div class="fact">
+          <span class="fact__label">Based in</span>
+          <span class="fact__value">Dallas, TX &amp; New Orleans, LA</span>
+        </div>
+        <div class="fact">
+          <span class="fact__label">Focus</span>
+          <span class="fact__value">Interior Design · Textiles · Painting</span>
+        </div>
+      </aside>
+    </div>
+
+    <div class="skills">
+      <h3 class="skills__title">Skills</h3>
+      <ul class="skills__list">
+        <li>Rhino3D</li>
+        <li>Adobe Suite</li>
+        <li>Hand Rendering</li>
+        <li>Textile Construction</li>
+        <li>Photoshop</li>
+        <li>Canva</li>
+        <li>WIX</li>
+        <li>Mood Boarding</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Work / Portfolio -->
+  <section class="section work" id="work">
+    <div class="section__head">
+      <span class="section__num">02</span>
+      <h2 class="section__title">Selected Work</h2>
+    </div>
+    <div class="work__grid">
+      <article class="card">
+        <div class="card__media" data-label="Interior Design"></div>
+        <div class="card__body">
+          <h3>Dallas Kips Bay Show House</h3>
+          <p>Contributed to the design and execution of two spaces — selecting
+             fabrics, sourcing furniture, and producing renderings in Adobe Suite
+             and Rhino3D.</p>
+          <span class="card__tag">Interior Design</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__media" data-label="Textiles"></div>
+        <div class="card__body">
+          <h3>De/Re Constructed Tote Bag</h3>
+          <p>A sustainable textile piece selected as a Runway Nominee for the
+             Tulane Design Showcase — built around reuse and reconstruction.</p>
+          <span class="card__tag">Sustainable Textiles</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__media" data-label="Painting"></div>
+        <div class="card__body">
+          <h3>Commissioned Portraits &amp; Panels</h3>
+          <p>15 custom portraits for the Young Presidents' Organization and 24
+             large panels for the Fannie C. Harris Youth Shelter.</p>
+          <span class="card__tag">Fine Art</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__media" data-label="Graphic Design"></div>
+        <div class="card__body">
+          <h3>ricRACK Event &amp; Brand Design</h3>
+          <p>Graphic design, digital textile patterns, and social content created
+             for ricRACK NOLA's sustainability events and website.</p>
+          <span class="card__tag">Graphic Design</span>
+        </div>
+      </article>
+    </div>
+    <p class="work__note">
+      Sketches, paintings, and commissioned pieces are shared on
+      <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>.
+    </p>
+  </section>
+
+  <!-- Experience -->
+  <section class="section experience" id="experience">
+    <div class="section__head">
+      <span class="section__num">03</span>
+      <h2 class="section__title">Experience</h2>
+    </div>
+    <ol class="timeline">
+      <li class="timeline__item">
+        <div class="timeline__meta">
+          <span class="timeline__date">Summer 2020 · Summer 2024 · Fall 2025</span>
+          <h3 class="timeline__role">Design Assistant</h3>
+          <span class="timeline__org">SF Interior Design</span>
+        </div>
+        <ul class="timeline__points">
+          <li>Guided design direction by selecting fabric samples, sourcing furniture and accessories, and organizing mood boards.</li>
+          <li>Produced renderings with Adobe Suite and Rhino3D.</li>
+          <li>Contributed to the design and execution of two spaces in the Dallas Kips Bay Show House.</li>
+        </ul>
+      </li>
+
+      <li class="timeline__item">
+        <div class="timeline__meta">
+          <span class="timeline__date">Spring 2025</span>
+          <h3 class="timeline__role">Intern</h3>
+          <span class="timeline__org">ricRACK NOLA</span>
+        </div>
+        <ul class="timeline__points">
+          <li>Worked directly with the executive director on projects and events, meeting weekly to shape ideas, logistics, and graphic design (Canva &amp; Photoshop).</li>
+          <li>Designed sustainable textile projects for auction and created digital patterns shared on the website.</li>
+          <li>Supported the Social Media Manager with WIX website content, video editing, and social graphics.</li>
+        </ul>
+      </li>
+
+      <li class="timeline__item">
+        <div class="timeline__meta">
+          <span class="timeline__date">Sep 2019 – Dec 2020</span>
+          <h3 class="timeline__role">Teaching Assistant</h3>
+          <span class="timeline__org">Zhen Music &amp; Art Institute</span>
+        </div>
+        <ul class="timeline__points">
+          <li>Helped teach and supervise an advanced painting class for elementary-age students.</li>
+          <li>Managed supplies and upkeep of the art studio.</li>
+        </ul>
+      </li>
+
+      <li class="timeline__item">
+        <div class="timeline__meta">
+          <span class="timeline__date">May 2020 – Present</span>
+          <h3 class="timeline__role">Visual Artist</h3>
+          <span class="timeline__org">Independent &amp; Commissioned</span>
+        </div>
+        <ul class="timeline__points">
+          <li>Commissioned by the Young Presidents' Organization to paint 15 custom portraits.</li>
+          <li>Commissioned by the Fannie C. Harris Youth Shelter to paint 24 large panels for residents' rooms.</li>
+          <li>Sell original and commissioned works through an Instagram-based practice.</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Awards -->
+  <section class="section awards" id="awards">
+    <div class="section__head">
+      <span class="section__num">04</span>
+      <h2 class="section__title">Awards &amp; Recognition</h2>
+    </div>
+    <ul class="awards__list">
+      <li>
+        <span class="awards__year">2025</span>
+        <span class="awards__text">Tulane Design Showcase Runway Nominee — <em>De/Re Constructed Tote Bag</em></span>
+      </li>
+      <li>
+        <span class="awards__year">2021</span>
+        <span class="awards__text">Winner, Tulane Design Competition — Drawing / Painting / Sketching division</span>
+      </li>
+      <li>
+        <span class="awards__year">2019</span>
+        <span class="awards__text">First Place, After8toEducate Design Thinking Challenge — interior design for a teen homeless shelter</span>
+      </li>
+    </ul>
+    <div class="awards__edu">
+      <p><strong>The Hockaday School</strong>, Dallas, TX — GPA 3.7 (Commended &amp; Head of School List). Staff Artist for the Hockaday Newspaper; four-year Varsity Tennis letterman.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div class="section__head">
+      <span class="section__num">05</span>
+      <h2 class="section__title">Get in Touch</h2>
+    </div>
+    <div class="contact__inner">
+      <p class="contact__lead">Open to design opportunities, commissions, and collaborations.</p>
+      <div class="contact__links">
+        <a href="mailto:maddiefisher02@icloud.com" class="contact__link">
+          <span class="contact__label">Email</span>
+          maddiefisher02@icloud.com
+        </a>
+        <a href="tel:+12149099379" class="contact__link">
+          <span class="contact__label">Phone</span>
+          214-909-9379
+        </a>
+        <span class="contact__link">
+          <span class="contact__label">Location</span>
+          Dallas, TX
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Madeline Fisher. Designed &amp; made by hand.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
