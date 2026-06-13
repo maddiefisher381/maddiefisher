@@ -107,42 +107,43 @@ a { color: inherit; }
 
 /* ---------- Hero ---------- */
 .hero {
-  padding: clamp(7rem, 14vh, 10rem) var(--pad) clamp(2.5rem, 6vw, 4rem);
+  padding: clamp(7rem, 13vh, 9rem) var(--pad) clamp(3rem, 7vw, 5rem);
+}
+.hero__inner {
   max-width: var(--maxw);
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
 }
-.hero__eyebrow { color: var(--terracotta); margin: 0 0 1.6rem; }
+.hero__eyebrow { color: var(--terracotta); margin: 0 0 1.4rem; }
 .hero__display {
   font-family: var(--serif);
   font-weight: 500;
-  font-size: clamp(3.4rem, 13vw, 11rem);
-  line-height: .86;
+  font-size: clamp(3rem, 7.5vw, 6rem);
+  line-height: .9;
   letter-spacing: -0.015em;
-  margin: 0;
+  margin: 0 0 1.8rem;
   color: var(--oxblood);
   text-transform: uppercase;
 }
 .hero__display em { font-style: italic; font-weight: 400; text-transform: none; }
 
-.hero__lower {
-  display: grid;
-  grid-template-columns: 1.2fr .8fr;
-  gap: clamp(2rem, 6vw, 5rem);
-  align-items: end;
-  margin-top: clamp(2rem, 5vw, 3.5rem);
-}
 .hero__lead {
-  font-size: clamp(1.05rem, 1.7vw, 1.35rem);
+  font-size: clamp(1.02rem, 1.4vw, 1.2rem);
   font-weight: 400;
-  max-width: 34rem;
+  max-width: 32rem;
   margin: 0 0 2rem;
   color: var(--ink);
 }
 .hero__actions { display: flex; gap: 1rem; flex-wrap: wrap; }
-.hero__portrait { display: flex; justify-content: flex-end; }
+.hero__portrait { margin: 0; }
 .hero__portrait-frame {
   position: relative;
-  width: min(100%, 360px);
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
   aspect-ratio: 4 / 5;
   overflow: hidden;
   background: linear-gradient(160deg, var(--haze), var(--olive));
@@ -343,10 +344,9 @@ a.contact__link:hover { color: var(--terracotta); }
   .nav__links a { font-size: 1rem; }
   .nav__toggle { display: flex; z-index: 60; }
 
-  .hero__lower { grid-template-columns: 1fr; align-items: start; }
-  .hero__portrait { justify-content: flex-start; order: -1; }
-  .hero__portrait-frame { width: min(70%, 280px); }
-  .hero__portrait-cap { text-align: left; }
+  .hero__inner { grid-template-columns: 1fr; }
+  .hero__portrait { order: -1; }
+  .hero__portrait-frame { max-width: 300px; margin: 0; }
 
   .about__grid { grid-template-columns: 1fr; }
   .about__facts { border-left: none; border-top: 2px solid var(--terracotta); padding-left: 0; padding-top: 1.6rem; }
