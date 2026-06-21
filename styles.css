@@ -320,6 +320,16 @@ a.contact__link:hover { color: var(--terracotta); }
   text-align: center; padding: 2.5rem var(--pad); border-top: 1px solid var(--line);
   font-size: .68rem; letter-spacing: .2em; text-transform: uppercase; color: var(--muted);
 }
+.footer__social {
+  display: flex; justify-content: center; flex-wrap: wrap; gap: 1.8rem;
+  margin-bottom: 1.4rem;
+}
+.footer__social a {
+  text-decoration: none; color: var(--ink);
+  font-size: .68rem; letter-spacing: .2em; text-transform: uppercase; font-weight: 500;
+  transition: color .25s ease;
+}
+.footer__social a:hover { color: var(--terracotta); }
 
 /* ---------- Reveal ---------- */
 .section, .hero { opacity: 0; transform: translateY(24px); transition: opacity .8s ease, transform .8s ease; }
